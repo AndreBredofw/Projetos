@@ -6,6 +6,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+body{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
 header{
     height: 100px;
     background-color: black;
@@ -24,14 +29,49 @@ header{
     width: 100px;
 }
 
+.logoimg{
+    width: 80px;
+    height: 80px;
+    background-color: #b28756;
+}
+
 .menu{
     flex: 1;
     display: flex;
     justify-content: flex-end;
 }
 
-.logoimg{
-    width: 80px;
-    height: 80px;
-    background-color: #b28756;
+.menu ul, .menu li{
+    list-style: none;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu li a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    align-items: center;
+    border: 5px solid black; /*Adicionando essa borda o hover abaixo terá um efeito mais natural */
+}
+
+.menu li a:hover, .menu .active a{
+    border-bottom: 5px solid #b28756;
+    color: rgba(255, 255, 255, 0.589);
+}
+
+
+.banner{
+    height: calc(100vh - 100px);
+    background-color: #333;
+    background-image: url('../images/bg.jpg') ;
+    background-size: cover;
+    background-position: bottom;
 }
