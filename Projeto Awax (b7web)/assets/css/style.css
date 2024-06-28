@@ -33,6 +33,7 @@ header{
     width: 80px;
     height: 80px;
     background-color: #b28756;
+    border-radius: 40px;
 }
 
 .menu{
@@ -118,4 +119,12 @@ header{
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 20px;
+}
+
+.banner .sliders-pointers{
+    width: 100vw;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    margin-top: -450px;
 }
