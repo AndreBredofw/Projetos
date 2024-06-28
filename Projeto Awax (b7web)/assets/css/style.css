@@ -107,3 +107,15 @@ header{
 .banner h1 span{
     color: #b28756;
 }
+
+.banner a{
+    display: block;
+    background-color: #b28756;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
